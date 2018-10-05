@@ -36,6 +36,10 @@ nav > ul {
   display: flex;
 }
 
+.text-box {
+  text-align: center;
+}
+
 /*
 *
 * MAIN BODY END
