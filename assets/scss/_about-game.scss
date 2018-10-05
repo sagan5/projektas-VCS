@@ -1,0 +1,82 @@
+/*
+*
+* ABOUT GAME START
+*
+*/
+
+.about-game{
+	background-color: $white;
+	padding-bottom: 78px;
+	.container{
+		flex-wrap: wrap;
+	}
+}
+
+
+.description{
+	text-align: center;
+	color: #818181;
+	h2{
+		font-family: $opensans;
+		font-weight: 400;
+		font-size: 1.875rem;
+		text-transform: uppercase;
+		line-height: 1;
+		letter-spacing: -0.025px;
+		margin: 58px 10px 34px;
+	}
+	p{
+		font-family: $ptsans;
+		font-weight: 400;
+		font-size: 0.9375rem;
+		line-height: 1.3333;
+		margin: 0 10px 48px;
+	}
+}
+
+.advantages{
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.advantages-box{
+	text-align: center;
+	width: 30%;
+	&:nth-child(3n+2){
+		margin-top: 32px;
+	}
+	h3{
+		font-family: $opensans;
+		font-weight: 700;
+		font-size: 1.25rem;
+		color:#7b7b7b;
+		margin: 20px 5px 20px;
+	}
+	p{
+		font-family: $ptsans;
+		font-weight: 400;
+		font-size: 0.875rem;
+		line-height: 1.2857;
+		color: #9a9a9a;
+	}
+	img{
+		width: 100%;
+		border-radius: 20px;
+		display: block;
+		&:hover{
+			opacity: 0.5;
+		}
+	}
+	.gradient{
+		background-color: #00bac6;
+		border-radius: 20px;
+	}
+}
+
+/*
+*
+* ABOUT GAME END
+*
+*/
+
+

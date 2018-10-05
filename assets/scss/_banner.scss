@@ -1,0 +1,49 @@
+/*
+*
+* BANNER START
+*
+*/
+
+.banner{
+	background-image: url("../images/daenerys.jpg");
+	background-size: cover;
+	background-position: center;
+	height: calc(100vh - 59px - 81px);
+	position: relative;
+	.container{
+		// height: inherit;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -20%);
+		// justify-content: center;
+		// align-items: center;
+	}
+}
+
+.banner-text h1{
+	font-family: $opensans;
+	font-weight: 700;
+	font-size: 2.5rem;
+	color: $white;
+	line-height: 1;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+}
+
+.banner-text p{
+	font-family: $ptsans;
+	font-weight: 400;
+	color: $white;
+	font-size: 0.9375rem;
+	text-align: right;
+	line-height: 1.25;
+}
+
+
+/*
+*
+* BANNER END
+*
+*/

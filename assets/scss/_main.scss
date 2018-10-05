@@ -1,0 +1,44 @@
+/*
+*
+* MAIN BODY START
+*
+*/
+html{
+	font-size: 16px;
+}
+
+ul,
+body{
+	margin: 0;
+	padding: 0;
+}
+
+nav > ul{
+	list-style: none;
+}
+
+.container{
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.flex-container{
+	display: flex;
+}
+
+
+$opensans: 'Open Sans', sans-serif;
+$ptsans: 'PT Sans', sans-serif;
+$white: #ffffff;
+// .main-view{
+// 	height: 100vh;
+// }
+
+
+
+
+/*
+*
+* MAIN BODY END
+*
+*/

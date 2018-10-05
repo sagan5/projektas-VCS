@@ -1,0 +1,339 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid red;
+}
+
+/*
+*
+* MAIN BODY START
+*
+*/
+html {
+  font-size: 16px;
+}
+
+ul,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*
+*
+* MAIN BODY END
+*
+*/
+/*
+*
+* HEADER START
+*
+*/
+.header {
+  background-color: #252323;
+}
+
+.header .container {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.logo {
+  padding: 7px 15px 5px;
+}
+
+.soc-nav {
+  padding-right: 8px;
+}
+
+.soc-nav a {
+  font-size: 1.375rem;
+  padding: 10px 12px;
+  color: #c1c1c1;
+}
+
+/*
+*
+* HEADER END
+*
+*/
+/*
+*
+* NAVIGATION START
+*
+*/
+.navigation {
+  background-color: #ffffff;
+  border-bottom: 4px solid #efefef;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  opacity: 0.7;
+  z-index: 2;
+}
+
+.navigation .container {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.main-nav {
+  margin-top: 37px;
+  margin-bottom: 24px;
+}
+
+.main-nav a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #8b8b8b;
+  padding: 10px 12px 24px;
+  line-height: 1.4285;
+}
+
+.main-nav a:hover {
+  color: #00bac6;
+  padding-bottom: 24px;
+  border-bottom: 2px solid #00bac6;
+}
+
+.main-nav ul {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.search-box {
+  border: 1px solid #d6d6d6;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.search-box p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8125rem;
+  color: #b5b5b5;
+  line-height: 1.5384;
+  margin: 7px 19px;
+}
+
+.search-box i {
+  font-size: 1.1875rem;
+  color: #b5b5b5;
+  margin-right: 20px;
+}
+
+/*
+*
+* NAVIGATION END
+*
+*/
+/*
+*
+* BANNER START
+*
+*/
+.banner {
+  background-image: url("../images/daenerys.jpg");
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 59px - 81px);
+  position: relative;
+}
+
+.banner .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -20%);
+  -ms-transform: translate(-50%, -20%);
+  transform: translate(-50%, -20%);
+}
+
+.banner-text h1 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #ffffff;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.banner-text p {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 0.9375rem;
+  text-align: right;
+  line-height: 1.25;
+}
+
+/*
+*
+* BANNER END
+*
+*/
+/*
+*
+* ABOUT GAME START
+*
+*/
+.about-game {
+  background-color: #ffffff;
+  padding-bottom: 78px;
+}
+
+.about-game .container {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.description {
+  text-align: center;
+  color: #818181;
+}
+
+.description h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  line-height: 1;
+  letter-spacing: -0.025px;
+  margin: 58px 10px 34px;
+}
+
+.description p {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.9375rem;
+  line-height: 1.3333;
+  margin: 0 10px 48px;
+}
+
+.advantages {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.advantages-box {
+  text-align: center;
+  width: 30%;
+}
+
+.advantages-box:nth-child(3n+2) {
+  margin-top: 32px;
+}
+
+.advantages-box h3 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #7b7b7b;
+  margin: 20px 5px 20px;
+}
+
+.advantages-box p {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.2857;
+  color: #9a9a9a;
+}
+
+.advantages-box img {
+  width: 100%;
+  border-radius: 20px;
+  display: block;
+}
+
+.advantages-box img:hover {
+  opacity: 0.5;
+}
+
+.advantages-box .gradient {
+  background-color: #00bac6;
+  border-radius: 20px;
+}
+
+/*
+*
+* ABOUT GAME END
+*
+*/
+/*
+*
+* ABOUT US BEGIN
+*
+*/
+.about-us {
+  background-color: #eeeeee;
+}
+
+.about-us .container {
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 20px 0;
+}
+
+.about-us .container .text-box {
+  max-width: 32%;
+}
+
+.about-us .container .gallery {
+  max-width: 65%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.picture-box {
+  max-width: 32%;
+}
+
+.picture-box img {
+  width: 100%;
+}
+
+/*
+*
+* ABOUT US END
+*
+*/

@@ -1,0 +1,38 @@
+/*
+*
+* ABOUT US BEGIN
+*
+*/
+
+.about-us{
+	background-color: #eeeeee;
+	.container{
+		justify-content: space-around;
+		padding: 20px 0;
+		.text-box{
+			max-width: 32%;
+		}
+		.gallery{
+			max-width: 65%;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: center;
+			
+		}
+	}
+
+}
+
+.picture-box{
+	max-width: 32%;
+	// justify-content: space-between;
+	img{
+		width: 100%;
+
+	}
+}
+/*
+*
+* ABOUT US END
+*
+*/
