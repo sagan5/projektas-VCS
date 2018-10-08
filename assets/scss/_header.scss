@@ -6,9 +6,11 @@
 
 .header{
 	background-color: #252323;
+	// margin-bottom: 0;
 	.container{
 		justify-content: space-between;
 		align-items: center;
+		padding: 0;
 	}
 }
 

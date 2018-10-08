@@ -6,7 +6,7 @@
 
 .about-game{
 	background-color: $white;
-	padding-bottom: 78px;
+	// padding-bottom: 78px;
 	.container{
 		flex-wrap: wrap;
 	}
@@ -60,17 +60,15 @@
 		color: #9a9a9a;
 	}
 	img{
-		width: 100%;
 		border-radius: 20px;
-		display: block;
-		&:hover{
-			opacity: 0.5;
-		}
+		// &:hover{
+		// 	opacity: 0.5;
+		// }
 	}
-	.gradient{
-		background-color: #00bac6;
-		border-radius: 20px;
-	}
+	// .gradient{
+	// 	background-color: #00bac6;
+	// 	border-radius: 20px;
+	// }
 }
 
 /*

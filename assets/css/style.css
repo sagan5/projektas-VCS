@@ -25,9 +25,16 @@ nav > ul {
   list-style: none;
 }
 
+img {
+  width: 100%;
+  display: block;
+}
+
 .container {
   max-width: 980px;
   margin: 0 auto;
+  padding-bottom: 78px;
+  padding-top: 25px;
 }
 
 .flex-container {
@@ -61,6 +68,7 @@ nav > ul {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  padding: 0;
 }
 
 .logo {
@@ -106,6 +114,7 @@ nav > ul {
   align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .main-nav {
@@ -180,6 +189,7 @@ nav > ul {
   -webkit-transform: translate(-50%, -20%);
   -ms-transform: translate(-50%, -20%);
   transform: translate(-50%, -20%);
+  padding: 0;
 }
 
 .banner-text h1 {
@@ -214,7 +224,6 @@ nav > ul {
 */
 .about-game {
   background-color: #ffffff;
-  padding-bottom: 78px;
 }
 
 .about-game .container {
@@ -279,17 +288,6 @@ nav > ul {
 }
 
 .advantages-box img {
-  width: 100%;
-  border-radius: 20px;
-  display: block;
-}
-
-.advantages-box img:hover {
-  opacity: 0.5;
-}
-
-.advantages-box .gradient {
-  background-color: #00bac6;
   border-radius: 20px;
 }
 
@@ -310,7 +308,6 @@ nav > ul {
 .about-us .container {
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  padding: 20px 0;
 }
 
 .about-us .container .text-box {
@@ -332,12 +329,53 @@ nav > ul {
   max-width: 32%;
 }
 
-.picture-box img {
-  width: 100%;
+/*
+*
+* ABOUT US END
+*
+*/
+/*
+*
+* HOW TO PLAY START
+*
+*/
+.how-to-play {
+  background-color: #ffffff;
+}
+
+.how-to-play .gallery {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.link-box {
+  width: 21%;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.link-box img {
+  border-radius: 100%;
+}
+
+.link-box img:hover {
+  opacity: 0.7;
+  border: 3px solid #00bac6;
+}
+
+.link-box h3 {
+  padding-top: 15px;
+}
+
+.link-box p {
+  padding-top: 5px;
 }
 
 /*
 *
-* ABOUT US END
+* HOW TO PLAY START
 *
 */

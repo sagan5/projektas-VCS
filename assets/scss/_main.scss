@@ -17,9 +17,20 @@ nav > ul{
 	list-style: none;
 }
 
+img{
+	width: 100%;
+	display: block;
+}
+
+// p{
+// 	line-height: 
+// }
+
 .container{
 	max-width: 980px;
 	margin: 0 auto;
+	padding-bottom: 78px;
+	padding-top: 25px;
 }
 
 .flex-container{
