@@ -22,9 +22,9 @@ img{
 	display: block;
 }
 
-// p{
-// 	line-height: 
-// }
+a{
+	text-decoration: none;
+}
 
 .container{
 	max-width: 980px;
@@ -44,12 +44,7 @@ img{
 $opensans: 'Open Sans', sans-serif;
 $ptsans: 'PT Sans', sans-serif;
 $white: #ffffff;
-// .main-view{
-// 	height: 100vh;
-// }
-
-
-
+$grey: #eeeeee;
 
 /*
 *

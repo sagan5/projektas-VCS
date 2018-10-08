@@ -30,6 +30,10 @@ img {
   display: block;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 980px;
   margin: 0 auto;
@@ -123,10 +127,8 @@ img {
 }
 
 .main-nav a {
-  font-family: "Open Sans", sans-serif;
   font-size: 0.875rem;
   text-transform: uppercase;
-  text-decoration: none;
   color: #8b8b8b;
   padding: 10px 12px 24px;
   line-height: 1.4285;
@@ -151,7 +153,6 @@ img {
 }
 
 .search-box p {
-  font-family: "Open Sans", sans-serif;
   font-size: 0.8125rem;
   color: #b5b5b5;
   line-height: 1.5384;
@@ -193,19 +194,14 @@ img {
 }
 
 .banner-text h1 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
   font-size: 2.5rem;
   color: #ffffff;
-  line-height: 1;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
 
 .banner-text p {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
   color: #ffffff;
   font-size: 0.9375rem;
   text-align: right;
@@ -237,20 +233,10 @@ img {
 }
 
 .description h2 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
-  font-size: 1.875rem;
-  text-transform: uppercase;
-  line-height: 1;
-  letter-spacing: -0.025px;
   margin: 58px 10px 34px;
 }
 
 .description p {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 0.9375rem;
-  line-height: 1.3333;
   margin: 0 10px 48px;
 }
 
@@ -272,18 +258,11 @@ img {
 }
 
 .advantages-box h3 {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 700;
-  font-size: 1.25rem;
   color: #7b7b7b;
   margin: 20px 5px 20px;
 }
 
 .advantages-box p {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.2857;
   color: #9a9a9a;
 }
 
@@ -377,5 +356,32 @@ img {
 /*
 *
 * HOW TO PLAY START
+*
+*/
+/*
+*
+* EVENTS BEGIN
+*
+*/
+.events {
+  background-color: #eeeeee;
+}
+
+.event-box {
+  text-align: center;
+}
+
+.event-box .details {
+  width: 50%;
+}
+
+.event-box #map {
+  width: 50%;
+  height: auto;
+}
+
+/*
+*
+* EVENTS END
 *
 */
