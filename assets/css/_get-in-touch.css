@@ -1,0 +1,30 @@
+/*
+*
+* GET IN TOUCH BEGIN
+*
+*/
+.question {
+  background-color: #ffffff;
+}
+
+.question-box {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+
+.question-box .flex-container {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.question-box .flex-container .credentials {
+  width: 48%;
+}
+
+/*
+*
+* GET IN TOUCH END
+*
+*/

@@ -4,6 +4,16 @@
 *
 */
 
+$white: #ffffff;
+$lightblue: rgba(0, 186, 198, .7);
+
+// %input-shared{
+// 	width: 100%;
+// 	border: 1px solid $lightblue;
+// 	margin-bottom: 15px;
+// }
+
+
 .question{
 	background-color: $white;
 }
@@ -12,23 +22,47 @@
 	margin: 0 auto;
 	text-align: center;
 	width: 50%;
+	background-color: $grey;
+	border-radius: 10px;
+	padding: 10px;
 	.flex-container{
-		justify-content: space-between;
+		justify-content: space-around;
 		.credentials{
 			width: 48%;
 		}
 	}
 }
 
-#name,
-#email{
-	@extend %input-shared;
-	height: 25px;
+input[type=text],
+input[type=email]{
+	width: 100%;
+	padding: 10px 15px;
+	margin-bottom: 10px;
+	border: 1px solid $lightblue;
+	border-radius: 5px;
+}
+textarea{
+	width: 98%;
+	min-height: 150px;
+	resize: vertical;
+	border: 1px solid $lightblue;
+	border-radius: 5px;
+	padding: 10px 15px;
+	margin-bottom: 10px;
 }
 
-#question{
-	@extend %input-shared;
-	min-height: 250px;
+
+input[type=submit] {
+	font-size: 1rem;
+    background-color: $lightblue;
+    color: $white;
+    padding: 15px 23px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+    	background-color: rgba(0, 186, 198, 1);
+	}
 }
 
 /*

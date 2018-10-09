@@ -98,13 +98,6 @@ section {
   border-bottom: 70px solid #ffffff;
 }
 
-#name,
-#email, #question {
-  width: 100%;
-  border: 1px solid #00bac6;
-  margin-bottom: 15px;
-}
-
 /*
 *
 * MAIN BODY END
@@ -441,25 +434,51 @@ section {
   margin: 0 auto;
   text-align: center;
   width: 50%;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 .question-box .flex-container {
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
 }
 
 .question-box .flex-container .credentials {
   width: 48%;
 }
 
-#name,
-#email {
-  height: 25px;
+input[type=text],
+input[type=email] {
+  width: 100%;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: 1px solid rgba(0, 186, 198, 0.7);
+  border-radius: 5px;
 }
 
-#question {
-  min-height: 250px;
+textarea {
+  width: 98%;
+  min-height: 150px;
+  resize: vertical;
+  border: 1px solid rgba(0, 186, 198, 0.7);
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+}
+
+input[type=submit] {
+  font-size: 1rem;
+  background-color: rgba(0, 186, 198, 0.7);
+  color: #ffffff;
+  padding: 15px 23px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #00bac6;
 }
 
 /*
