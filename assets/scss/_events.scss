@@ -3,6 +3,7 @@
 * EVENTS BEGIN
 *
 */
+
 .events{
 	background-color: $grey;
 }
@@ -11,6 +12,7 @@
 	text-align: center;
 	.details{
 		width: 50%;
+		text-align: left;
 	}
 	#map{
 		width: 50%;

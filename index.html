@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Projektas</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|PT+Sans:400,400i,700,700i|Pacifico&amp;subset=latin-ext" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<!-- 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|PT+Sans:400,400i,700,700i|Pacifico&amp;subset=latin-ext" rel="stylesheet">
+ -->	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
@@ -210,15 +210,42 @@
 					</div>
 				</div>
 				<p>For past tournaments click <a href="#">here</a></p>
-
 			</div>
-<!-- 			<div class="event past">
-				<h3>For past tournaments click <a href="#">here</a></h3>
-			</div>			
- -->		</div>
+		</div>
 	</section>
 
 	<!-- events end -->
+
+	<!-- get in touch begin-->
+
+	<section class="question">
+		<div class="container">
+			<h2>Get it touch!</h2>
+			<form name='registracija' method='GET' enctype='multipart/form-data'>
+				<div>
+					<input type="text" id="name" name="name" value="" placeholder="Please enter your Name" required="">
+				</div>
+				<div>
+					<input type="email" id="email" name="email" value="" placeholder="Please enter your email" required="">
+				</div>
+				<div>
+					<input type="text" id="question" name="question" value="" placeholder="Please enter your question here!" required="">
+				</div>
+				<div>
+					<input type="checkbox" id="newsletter" name="newsletter" value="1">
+					<label for="newsletter">Sign Up for a newsletter!</label>
+				</div>
+				<div>
+					<input type="submit" name="new_question" value="Send your question!">
+				</div>
+			</form>
+		</div>		
+	</section>
+
+	<!-- get in touch end -->
+
+	<!-- scripts begin-->
 	<script type="text/javascript" src="assets/scripts/custom.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+	<!-- scripts end -->
 </body>

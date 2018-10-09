@@ -232,10 +232,6 @@ a {
   color: #818181;
 }
 
-.description h2 {
-  margin: 58px 10px 34px;
-}
-
 .description p {
   margin: 0 10px 48px;
 }
@@ -373,6 +369,7 @@ a {
 
 .event-box .details {
   width: 50%;
+  text-align: left;
 }
 
 .event-box #map {
@@ -383,5 +380,15 @@ a {
 /*
 *
 * EVENTS END
+*
+*/
+/*
+*
+* GET IN TOUCH BEGIN
+*
+*/
+/*
+*
+* GET IN TOUCH END
 *
 */

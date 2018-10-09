@@ -1,0 +1,27 @@
+/*
+*
+* EVENTS BEGIN
+*
+*/
+.events {
+  background-color: #eeeeee;
+}
+
+.event-box {
+  text-align: left;
+}
+
+.event-box .details {
+  width: 50%;
+}
+
+.event-box #map {
+  width: 50%;
+  height: auto;
+}
+
+/*
+*
+* EVENTS END
+*
+*/
