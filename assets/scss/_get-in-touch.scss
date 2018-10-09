@@ -4,9 +4,32 @@
 *
 */
 
+.question{
+	background-color: $white;
+}
 
+.question-box{
+	margin: 0 auto;
+	text-align: center;
+	width: 50%;
+	.flex-container{
+		justify-content: space-between;
+		.credentials{
+			width: 48%;
+		}
+	}
+}
 
+#name,
+#email{
+	@extend %input-shared;
+	height: 25px;
+}
 
+#question{
+	@extend %input-shared;
+	min-height: 250px;
+}
 
 /*
 *

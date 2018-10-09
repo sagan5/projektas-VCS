@@ -105,6 +105,8 @@
 	<!-- about us begin -->
 
 	<section class="about-us">
+		<div class="arrow-grey">
+		</div>
 		<div class="container flex-container">
 			<div class="text-box">
 				<h2>About us</h2>
@@ -138,6 +140,8 @@
 	<!-- how to play begin-->
 
 	<section class="how-to-play">
+		<div class="arrow-white">
+		</div>
 		<div class="container">
 			<div class="text-box">
 				<h2>How to begin playing</h2>
@@ -192,7 +196,10 @@
 
 	<!-- events begin -->
 
+	
 	<section class="events">
+		<div class="arrow-grey">
+		</div>
 		<div class="container">
 			<div class="event-box">
 				<h2>Upcoming tournaments</h2>
@@ -209,7 +216,7 @@
 						
 					</div>
 				</div>
-				<p>For past tournaments click <a href="#">here</a></p>
+				<h4><a href="#">For past tournaments click here</a></h4>
 			</div>
 		</div>
 	</section>
@@ -219,26 +226,32 @@
 	<!-- get in touch begin-->
 
 	<section class="question">
+		<div class="arrow-white">
+		</div>
 		<div class="container">
-			<h2>Get it touch!</h2>
-			<form name='registracija' method='GET' enctype='multipart/form-data'>
-				<div>
-					<input type="text" id="name" name="name" value="" placeholder="Please enter your Name" required="">
-				</div>
-				<div>
-					<input type="email" id="email" name="email" value="" placeholder="Please enter your email" required="">
-				</div>
-				<div>
-					<input type="text" id="question" name="question" value="" placeholder="Please enter your question here!" required="">
-				</div>
-				<div>
-					<input type="checkbox" id="newsletter" name="newsletter" value="1">
-					<label for="newsletter">Sign Up for a newsletter!</label>
-				</div>
-				<div>
-					<input type="submit" name="new_question" value="Send your question!">
-				</div>
-			</form>
+			<div class="question-box">
+				<h2>Get in touch with us!</h2>
+				<form name='questions' method='GET' enctype='multipart/form-data'>
+					<div class="flex-container">
+						<div class="credentials">
+							<input type="text" id="name" name="name" value="" placeholder="Please enter your Name" required="">
+						</div>
+						<div class="credentials">
+							<input type="email" id="email" name="email" value="" placeholder="Please enter your email" required="">
+						</div>
+					</div>
+					<div>
+						<input type="text" id="question" name="question" value="" placeholder="Write down your question here!" required="">
+					</div>
+					<div>
+						<input type="checkbox" id="newsletter" name="newsletter" value="1">
+						<label for="newsletter">Sign Up for a newsletter!</label>
+					</div>
+					<div>
+						<input type="submit" name="new_question" value="Send your question!">
+					</div>
+				</form>
+			</div>
 		</div>		
 	</section>
 

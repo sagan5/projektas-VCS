@@ -3,6 +3,7 @@
 * MAIN BODY START
 *
 */
+
 html{
 	font-size: 16px;
 }
@@ -27,13 +28,23 @@ a{
 }
 
 h2{
-	
+	margin-top: 0;
 }
+
+section{
+	position: relative;
+}
+
+$opensans: 'Open Sans', sans-serif;
+$ptsans: 'PT Sans', sans-serif;
+$white: #ffffff;
+$grey: #eeeeee;
+$lightblue: #00bac6;
 
 .container{
 	max-width: 980px;
 	margin: 0 auto;
-	padding-bottom: 78px;
+	padding-bottom: 100px;
 	padding-top: 25px;
 }
 
@@ -45,10 +56,33 @@ h2{
 	text-align: center;
 }
 
-$opensans: 'Open Sans', sans-serif;
-$ptsans: 'PT Sans', sans-serif;
-$white: #ffffff;
-$grey: #eeeeee;
+@mixin arrow{
+  width: 0; 
+  height: 0; 
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: -70px;
+  transform: translateX(-50%);
+}
+
+.arrow-grey{
+	@include arrow;
+	border-bottom: 70px solid $grey;
+}
+
+.arrow-white{
+	@include arrow;
+	border-bottom: 70px solid $white;
+}
+
+%input-shared{
+	width: 100%;
+	border: 1px solid $lightblue;
+	margin-bottom: 15px;
+}
 
 /*
 *

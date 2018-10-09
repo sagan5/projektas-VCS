@@ -1,11 +1,20 @@
+/*
+*
+* RESET BEGIN
+*
+*/
 *,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border: 1px solid red;
 }
 
+/*
+*
+* RESET END
+*
+*/
 /*
 *
 * MAIN BODY START
@@ -34,10 +43,18 @@ a {
   text-decoration: none;
 }
 
+h2 {
+  margin-top: 0;
+}
+
+section {
+  position: relative;
+}
+
 .container {
   max-width: 980px;
   margin: 0 auto;
-  padding-bottom: 78px;
+  padding-bottom: 100px;
   padding-top: 25px;
 }
 
@@ -49,6 +66,43 @@ a {
 
 .text-box {
   text-align: center;
+}
+
+.arrow-grey {
+  width: 0;
+  height: 0;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: -70px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-bottom: 70px solid #eeeeee;
+}
+
+.arrow-white {
+  width: 0;
+  height: 0;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: -70px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  border-bottom: 70px solid #ffffff;
+}
+
+#name,
+#email, #question {
+  width: 100%;
+  border: 1px solid #00bac6;
+  margin-bottom: 15px;
 }
 
 /*
@@ -341,14 +395,6 @@ a {
   border: 3px solid #00bac6;
 }
 
-.link-box h3 {
-  padding-top: 15px;
-}
-
-.link-box p {
-  padding-top: 5px;
-}
-
 /*
 *
 * HOW TO PLAY START
@@ -374,7 +420,7 @@ a {
 
 .event-box #map {
   width: 50%;
-  height: auto;
+  min-height: calc(width);
 }
 
 /*
@@ -387,6 +433,35 @@ a {
 * GET IN TOUCH BEGIN
 *
 */
+.question {
+  background-color: #ffffff;
+}
+
+.question-box {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+
+.question-box .flex-container {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.question-box .flex-container .credentials {
+  width: 48%;
+}
+
+#name,
+#email {
+  height: 25px;
+}
+
+#question {
+  min-height: 250px;
+}
+
 /*
 *
 * GET IN TOUCH END

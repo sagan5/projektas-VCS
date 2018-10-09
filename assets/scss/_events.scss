@@ -16,7 +16,7 @@
 	}
 	#map{
 		width: 50%;
-		height: auto;
+		min-height: calc(width);
 	}
 }
 
