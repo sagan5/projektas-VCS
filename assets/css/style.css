@@ -24,6 +24,10 @@ html {
   font-size: 16px;
 }
 
+section {
+  position: relative;
+}
+
 ul,
 body {
   margin: 0;
@@ -44,11 +48,39 @@ a {
 }
 
 h2 {
-  margin-top: 0;
+  margin: 0;
+  font: 2rem "Game of Thrones", sans-serif;
+  font-weight: 500;
+  line-height: 1.4;
+  word-spacing: 3px;
+  color: #818181;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+  letter-spacing: 1px;
 }
 
-section {
-  position: relative;
+h3 {
+  margin: 20px 0;
+  font: 1.3rem "Game of Thrones", sans-serif;
+  font-weight: 500;
+  color: #818181;
+  text-transform: uppercase;
+  word-spacing: 3px;
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+h4 {
+  font: 1rem "Game of Thrones", sans-serif;
+}
+
+p {
+  margin: 0;
+  font: 1rem "PT Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.2857;
+  color: #818181;
+  padding: 0 10px;
 }
 
 @font-face {
@@ -66,6 +98,11 @@ section {
   padding-top: 25px;
 }
 
+.wrap {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -77,22 +114,22 @@ section {
 }
 
 ::-webkit-input-placeholder {
-  color: #8b8b8b;
+  color: #818181;
   font-size: 0.875rem;
 }
 
 :-ms-input-placeholder {
-  color: #8b8b8b;
+  color: #818181;
   font-size: 0.875rem;
 }
 
 ::-ms-input-placeholder {
-  color: #8b8b8b;
+  color: #818181;
   font-size: 0.875rem;
 }
 
 ::placeholder {
-  color: #8b8b8b;
+  color: #818181;
   font-size: 0.875rem;
 }
 
@@ -187,8 +224,6 @@ section {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   padding: 0;
 }
 
@@ -200,19 +235,15 @@ section {
 .main-nav a {
   font: 0.875rem "Game of Thrones", sans-serif;
   text-transform: uppercase;
-  color: #8b8b8b;
+  color: #818181;
   padding: 10px 12px 24px;
+  letter-spacing: 0.8px;
 }
 
 .main-nav a:hover {
   color: #00bac6;
   padding-bottom: 26px;
   border-bottom: 3px solid #00bac6;
-}
-
-.main-nav ul {
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 
 .search-box {
@@ -225,41 +256,52 @@ section {
   padding: 10px;
   margin: 0;
   font-size: 0.875rem;
-  color: #8b8b8b;
+  color: #818181;
 }
 
 .search-box button {
   background-color: #ffffff;
   border: 0;
   font-size: 1.375rem;
-  color: #8b8b8b;
+  color: #818181;
   padding-right: 10px;
   margin-right: 2px;
   cursor: pointer;
 }
 
 .search-box ::-webkit-input-placeholder {
-  color: #8b8b8b;
+  color: #818181;
   text-transform: uppercase;
   font: 0.875rem "Game of Thrones", sans-serif;
+  letter-spacing: 0.8px;
 }
 
 .search-box :-ms-input-placeholder {
-  color: #8b8b8b;
+  color: #818181;
   text-transform: uppercase;
   font: 0.875rem "Game of Thrones", sans-serif;
+  letter-spacing: 0.8px;
 }
 
 .search-box ::-ms-input-placeholder {
-  color: #8b8b8b;
+  color: #818181;
   text-transform: uppercase;
   font: 0.875rem "Game of Thrones", sans-serif;
+  letter-spacing: 0.8px;
 }
 
 .search-box ::placeholder {
-  color: #8b8b8b;
+  color: #818181;
   text-transform: uppercase;
   font: 0.875rem "Game of Thrones", sans-serif;
+  letter-spacing: 0.8px;
+}
+
+h2::before {
+  display: block;
+  content: " ";
+  margin-top: -100px;
+  height: 100px;
 }
 
 /*
@@ -290,21 +332,16 @@ section {
   padding: 0;
 }
 
-.banner-text h1 {
-  font: 2.5rem "Game of Thrones", sans-serif;
+h1 {
+  font: 3.4rem "Game of Thrones", sans-serif;
   color: #ffffff;
-  line-height: 1.5;
+  line-height: 1.3;
   word-spacing: 10px;
+  letter-spacing: 1.5px;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 20px;
-}
-
-.banner-text p {
-  color: #ffffff;
-  font-size: 0.9375rem;
-  text-align: right;
-  line-height: 1.25;
+  font-weight: 400;
 }
 
 /*
@@ -321,42 +358,31 @@ section {
   background-color: #ffffff;
 }
 
-.about-game .container {
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-}
-
 .description {
   text-align: center;
 }
 
 .description p {
-  margin: 0 10px 48px;
+  margin-bottom: 20px;
 }
 
 .advantages {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
 }
 
 .advantages-box {
   text-align: center;
-  width: 30%;
+  width: 32%;
 }
 
 .advantages-box:nth-child(3n+2) {
   margin-top: 32px;
 }
 
-.advantages-box h3 {
-  margin: 20px 5px 20px;
-}
-
 .advantages-box img {
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 /*
