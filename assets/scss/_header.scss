@@ -5,8 +5,7 @@
 */
 
 .header{
-	background-color: #252323;
-	// margin-bottom: 0;
+	background-color: $black;
 	.container{
 		justify-content: space-between;
 		align-items: center;
@@ -15,7 +14,7 @@
 }
 
 .logo{
-	padding: 7px 15px 5px;
+	padding: 7px 15px;
 }
 
 .soc-nav{
@@ -23,7 +22,7 @@
 	a{
 		font-size: 1.375rem;
 		padding: 10px 12px;
-		color: #c1c1c1;
+		color: $lgrey;
 	}
 }
 

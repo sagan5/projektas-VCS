@@ -35,13 +35,29 @@ section{
 	position: relative;
 }
 
+$agot: 'Game of Thrones', sans-serif;
 $opensans: 'Open Sans', sans-serif;
 $ptsans: 'PT Sans', sans-serif;
+
 $white: #ffffff;
 $grey: #eeeeee;
 $dgrey: #8b8b8b;
+$lgrey: #efefef;
+$black: #252323;
 $lightblue1: rgba(0, 186, 198, 1);
 $lightblue05: rgba(0, 186, 198, .5);
+
+@font-face {
+    font-family: 'Game of Thrones';
+    src: url('../fonts/subset-GameofThrones.eot');
+    src: url('../fonts/subset-GameofThrones.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/subset-GameofThrones.woff2') format('woff2'),
+        url('../fonts/subset-GameofThrones.woff') format('woff'),
+        url('../fonts/subset-GameofThrones.ttf') format('truetype'),
+        url('../fonts/subset-GameofThrones.svg#GameofThrones') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .container{
 	max-width: 980px;
@@ -58,8 +74,9 @@ $lightblue05: rgba(0, 186, 198, .5);
 	text-align: center;
 }
 
-::placeholder {
+::placeholder{
     color: $dgrey;
+    font-size: 0.875rem;
 }
 
 @mixin arrow{
