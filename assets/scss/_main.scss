@@ -39,7 +39,9 @@ $opensans: 'Open Sans', sans-serif;
 $ptsans: 'PT Sans', sans-serif;
 $white: #ffffff;
 $grey: #eeeeee;
-$lightblue: rgba(0, 186, 198, .5);
+$dgrey: #8b8b8b;
+$lightblue1: rgba(0, 186, 198, 1);
+$lightblue05: rgba(0, 186, 198, .5);
 
 .container{
 	max-width: 980px;
@@ -56,31 +58,35 @@ $lightblue: rgba(0, 186, 198, .5);
 	text-align: center;
 }
 
+::placeholder {
+    color: $dgrey;
+}
+
 @mixin arrow{
   width: 0; 
   height: 0; 
-  border-left: 300px solid transparent;
-  border-right: 300px solid transparent;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
   margin: 0 auto;
   position: absolute;
   left: 50%;
-  top: -70px;
+  top: -50px;
   transform: translateX(-50%);
 }
 
 .arrow-grey{
 	@include arrow;
-	border-bottom: 70px solid $grey;
+	border-bottom: 50px solid $grey;
 }
 
 .arrow-white{
 	@include arrow;
-	border-bottom: 70px solid $white;
+	border-bottom: 50px solid $white;
 }
 
 %input-shared{
 	width: 100%;
-	border: 1px solid $lightblue;
+	border: 1px solid $lightblue1;
 	margin-bottom: 15px;
 }
 

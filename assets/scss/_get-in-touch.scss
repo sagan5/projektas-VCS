@@ -4,8 +4,6 @@
 *
 */
 
-$white: #ffffff;
-$lightblue: rgba(0, 186, 198, .7);
 
 // %input-shared{
 // 	width: 100%;
@@ -38,14 +36,14 @@ input[type=email]{
 	width: 100%;
 	padding: 10px 15px;
 	margin-bottom: 10px;
-	border: 1px solid $lightblue;
+	border: 1px solid $lightblue1;
 	border-radius: 5px;
 }
 textarea{
 	width: 98%;
 	min-height: 150px;
 	resize: vertical;
-	border: 1px solid $lightblue;
+	border: 1px solid $lightblue1;
 	border-radius: 5px;
 	padding: 10px 15px;
 	margin-bottom: 10px;
@@ -54,14 +52,14 @@ textarea{
 
 input[type=submit] {
 	font-size: 1rem;
-    background-color: $lightblue;
+    background-color: $lightblue05;
     color: $white;
     padding: 15px 23px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     &:hover {
-    	background-color: rgba(0, 186, 198, 1);
+    	background-color: $lightblue1;
 	}
 }
 

@@ -26,7 +26,7 @@
 	a{
 		font-size: 0.875rem;
 		text-transform: uppercase;
-		color: #8b8b8b;
+		color: $dgrey;
 		padding: 10px 12px 24px;
 		line-height: 1.4285;
 		&:hover{
@@ -41,19 +41,24 @@
 }
 
 .search-box{
-	// height: 34px;
-	border: 1px solid #d6d6d6;
-	align-items: center;
-	p{
-		font-size: 0.8125rem;
-		color: #b5b5b5;
-		line-height: 1.5384;
-		margin: 7px 19px;
+	border: 1px solid $lightblue1;
+	border-radius: 5px;
+	input[type=text]{
+		border: none;
+		padding: 10px;
+		margin: 0;
+		font-size: 1rem;
+		color: $dgrey;
+
 	}
-	i{
-		font-size: 1.1875rem;
-		color: #b5b5b5;
-		margin-right: 20px;
+	button{
+		background-color: $white;
+		border: 0;
+		font-size: 1.5rem;
+		color: $dgrey;
+		padding-right: 10px;
+		margin-right: 2px;
+		cursor: pointer;
 	}
 }
 
