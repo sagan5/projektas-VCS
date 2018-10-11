@@ -55,6 +55,18 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font: 3.4rem "Game of Thrones", sans-serif;
+  color: #ffffff;
+  line-height: 1.3;
+  word-spacing: 10px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
 h2 {
   margin: 0;
   font: 2rem "Game of Thrones", sans-serif;
@@ -100,7 +112,7 @@ p {
   padding: 0;
 }
 
-.your-class {
+.carousel {
   width: 100%;
   height: 50vh;
 }
@@ -324,33 +336,35 @@ h2::before {
 *
 */
 .banner {
-  background-image: url("../images/daenerys.jpg");
-  background-size: cover;
-  background-position: center;
-  height: calc(100vh - 59px - 81px);
+  height: calc(100vh - 149px);
   position: relative;
 }
 
 .banner .container {
+  height: inherit;
+  max-width: 980px;
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
-  -webkit-transform: translate(-50%, -20%);
-  -ms-transform: translate(-50%, -20%);
-  transform: translate(-50%, -20%);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
   padding: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
-h1 {
-  font: 3.4rem "Game of Thrones", sans-serif;
+.fa-angle-left,
+.fa-angle-right {
+  font-size: 5rem;
   color: #ffffff;
-  line-height: 1.3;
-  word-spacing: 10px;
-  letter-spacing: 1.5px;
-  text-align: center;
-  text-transform: uppercase;
-  margin-bottom: 20px;
-  font-weight: 400;
+  opacity: 0.65;
+}
+
+.fa-angle-left:hover,
+.fa-angle-right:hover {
+  opacity: 1;
 }
 
 /*

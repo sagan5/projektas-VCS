@@ -56,6 +56,18 @@ a{
 	text-decoration: none;
 }
 
+h1{
+	font: 3.4rem $agot;
+	color: $white;
+	line-height: 1.3;
+	word-spacing: 10px;
+	letter-spacing: 1.5px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	font-weight: 400;
+}
+
 h2{
 	margin: 0;
 	font: 2rem $agot;
@@ -100,7 +112,7 @@ p{
 	padding: 0;
 }
 
-.your-class{
+.carousel{
 	width: 100%;
 	height: 50vh;
 }

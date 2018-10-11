@@ -7,9 +7,9 @@ console.log("Pavyko!");
 // }
 
 $(document).ready(function(){
-  $('.your-class').slick({
+  $('.carousel').slick({
     autoplay: true,
-    autoplaySpeed: 6000,
-    pauseOnHover: false
+    autoplaySpeed: 2000,
+    pauseOnHover: true
   });
 });
