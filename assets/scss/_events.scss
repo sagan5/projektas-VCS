@@ -9,14 +9,30 @@
 }
 
 .event-box{
+	margin: 0 auto;
 	text-align: center;
-	.details{
-		width: 50%;
-		text-align: left;
+	width: 70%;
+	>p{
+		margin: 27px 0;
+		// border-top: 1px solid $lightblue05;
 	}
-	#map{
-		width: 50%;
-		min-height: calc(width);
+	img{
+		border-radius: 10px;
+	}
+	.event-description{
+		justify-content: space-between;
+		min-height: 250px;
+		.details{
+			width: 38%;
+			text-align: left;
+			p{
+				border-bottom: 1px solid $lightblue05;
+
+			}
+		}
+		#map{
+			width: 60%;
+		}
 	}
 }
 

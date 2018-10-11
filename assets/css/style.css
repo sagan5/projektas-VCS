@@ -20,6 +20,14 @@
 * MAIN BODY START
 *
 */
+@font-face {
+  font-family: 'Game of Thrones';
+  src: url("../fonts/subset-GameofThrones.eot");
+  src: url("../fonts/subset-GameofThrones.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-GameofThrones.woff2") format("woff2"), url("../fonts/subset-GameofThrones.woff") format("woff"), url("../fonts/subset-GameofThrones.ttf") format("truetype"), url("../fonts/subset-GameofThrones.svg#GameofThrones") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
   font-size: 16px;
 }
@@ -72,6 +80,15 @@ h3 {
 
 h4 {
   font: 1rem "Game of Thrones", sans-serif;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  color: #818181;
+}
+
+h5 {
+  font: 0.8rem "Game of Thrones", sans-serif;
+  margin: 10px 0;
+  color: #818181;
 }
 
 p {
@@ -80,22 +97,14 @@ p {
   font-weight: 400;
   line-height: 1.2857;
   color: #818181;
-  padding: 0 10px;
-}
-
-@font-face {
-  font-family: 'Game of Thrones';
-  src: url("../fonts/subset-GameofThrones.eot");
-  src: url("../fonts/subset-GameofThrones.eot?#iefix") format("embedded-opentype"), url("../fonts/subset-GameofThrones.woff2") format("woff2"), url("../fonts/subset-GameofThrones.woff") format("woff"), url("../fonts/subset-GameofThrones.ttf") format("truetype"), url("../fonts/subset-GameofThrones.svg#GameofThrones") format("svg");
-  font-weight: normal;
-  font-style: normal;
+  padding: 0;
 }
 
 .container {
   max-width: 980px;
   margin: 0 auto;
-  padding-bottom: 100px;
-  padding-top: 25px;
+  padding-bottom: 70px;
+  padding-top: 45px;
 }
 
 .wrap {
@@ -107,10 +116,6 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.text-box {
-  text-align: center;
 }
 
 ::-webkit-input-placeholder {
@@ -248,7 +253,6 @@ p {
 
 .search-box {
   margin-top: 28px;
-  border-radius: 5px;
 }
 
 .search-box input[type=text] {
@@ -378,7 +382,7 @@ h1 {
 }
 
 .advantages-box:nth-child(3n+2) {
-  margin-top: 32px;
+  margin-top: 42px;
 }
 
 .advantages-box img {
@@ -435,20 +439,18 @@ h1 {
 */
 .how-to-play {
   background-color: #ffffff;
+  text-align: center;
 }
 
 .how-to-play .gallery {
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -ms-flex-pack: distribute;
   justify-content: space-around;
-  padding-top: 20px;
 }
 
 .link-box {
   width: 21%;
   text-align: center;
-  padding-top: 10px;
+  padding-top: 25px;
 }
 
 .link-box img {
@@ -457,7 +459,16 @@ h1 {
 
 .link-box img:hover {
   opacity: 0.7;
-  border: 3px solid #00bac6;
+  border: 1px solid #00bac6;
+}
+
+.link-box h4 {
+  border-bottom: 1px solid #ffffff;
+}
+
+.link-box h4:hover {
+  color: #00bac6;
+  border-bottom: 1px solid #00bac6;
 }
 
 /*
@@ -475,17 +486,37 @@ h1 {
 }
 
 .event-box {
+  margin: 0 auto;
   text-align: center;
+  width: 70%;
 }
 
-.event-box .details {
-  width: 50%;
+.event-box > p {
+  margin: 27px 0;
+}
+
+.event-box img {
+  border-radius: 10px;
+}
+
+.event-box .event-description {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  min-height: 250px;
+}
+
+.event-box .event-description .details {
+  width: 38%;
   text-align: left;
 }
 
-.event-box #map {
-  width: 50%;
-  min-height: calc(width);
+.event-box .event-description .details p {
+  border-bottom: 1px solid rgba(0, 186, 198, 0.5);
+}
+
+.event-box .event-description #map {
+  width: 60%;
 }
 
 /*
@@ -505,8 +536,7 @@ h1 {
 .question-box {
   margin: 0 auto;
   text-align: center;
-  width: 50%;
-  background-color: #eeeeee;
+  width: 60%;
   border-radius: 10px;
   padding: 10px;
 }
@@ -518,6 +548,22 @@ h1 {
 
 .question-box .flex-container .credentials {
   width: 48%;
+}
+
+.question-box ::-webkit-input-placeholder {
+  font-family: "PT Sans", sans-serif;
+}
+
+.question-box :-ms-input-placeholder {
+  font-family: "PT Sans", sans-serif;
+}
+
+.question-box ::-ms-input-placeholder {
+  font-family: "PT Sans", sans-serif;
+}
+
+.question-box ::placeholder {
+  font-family: "PT Sans", sans-serif;
 }
 
 input[type=text],
@@ -540,10 +586,10 @@ textarea {
 }
 
 input[type=submit] {
-  font-size: 1rem;
+  font: 1rem "Game of Thrones", sans-serif;
   background-color: rgba(0, 186, 198, 0.5);
   color: #ffffff;
-  padding: 15px 23px;
+  padding: 15px 43px;
   border: none;
   border-radius: 5px;
   cursor: pointer;

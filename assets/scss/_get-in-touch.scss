@@ -4,14 +4,6 @@
 *
 */
 
-
-// %input-shared{
-// 	width: 100%;
-// 	border: 1px solid $lightblue;
-// 	margin-bottom: 15px;
-// }
-
-
 .question{
 	background-color: $white;
 }
@@ -19,8 +11,7 @@
 .question-box{
 	margin: 0 auto;
 	text-align: center;
-	width: 50%;
-	background-color: $grey;
+	width: 60%;
 	border-radius: 10px;
 	padding: 10px;
 	.flex-container{
@@ -28,6 +19,9 @@
 		.credentials{
 			width: 48%;
 		}
+	}
+	::placeholder{
+		font-family: $ptsans;
 	}
 }
 
@@ -51,10 +45,10 @@ textarea{
 
 
 input[type=submit] {
-	font-size: 1rem;
+	font: 1rem $agot;
     background-color: $lightblue05;
     color: $white;
-    padding: 15px 23px;
+    padding: 15px 43px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
