@@ -112,11 +112,6 @@ p {
   padding: 0;
 }
 
-.carousel {
-  width: 100%;
-  height: 50vh;
-}
-
 .container {
   max-width: 980px;
   margin: 0 auto;
@@ -239,7 +234,7 @@ p {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 .navigation .container {
@@ -325,6 +320,19 @@ h2::before {
   height: 100px;
 }
 
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.burger {
+  display: none;
+}
+
 /*
 *
 * NAVIGATION END
@@ -336,35 +344,33 @@ h2::before {
 *
 */
 .banner {
-  height: calc(100vh - 149px);
+  background-image: url("../images/daenerys.jpg");
+  background-size: cover;
+  background-position: center;
+  height: calc(100vh - 59px - 81px);
   position: relative;
 }
 
 .banner .container {
-  height: inherit;
-  max-width: 980px;
   position: absolute;
-  top: 10%;
+  top: 50%;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  -webkit-transform: translate(-50%, -20%);
+  -ms-transform: translate(-50%, -20%);
+  transform: translate(-50%, -20%);
   padding: 0;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
 }
 
-.fa-angle-left,
-.fa-angle-right {
-  font-size: 5rem;
+h1 {
+  font: 3.4rem "Game of Thrones", sans-serif;
   color: #ffffff;
-  opacity: 0.65;
-}
-
-.fa-angle-left:hover,
-.fa-angle-right:hover {
-  opacity: 1;
+  line-height: 1.3;
+  word-spacing: 10px;
+  letter-spacing: 1.5px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 400;
 }
 
 /*
@@ -428,22 +434,11 @@ h2::before {
 }
 
 .about-us .container .text-box {
-  max-width: 32%;
+  max-width: 37%;
 }
 
 .about-us .container .gallery {
-  max-width: 65%;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.picture-box {
-  max-width: 32%;
+  max-width: 60%;
 }
 
 /*
@@ -621,5 +616,32 @@ input[type=submit]:hover {
 /*
 *
 * GET IN TOUCH END
+*
+*/
+/*
+*
+* RESPONSIVE BEGIN
+*
+*/
+@media all and (max-width: 820px) {
+  .nav {
+    display: none;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .nav.show {
+    display: block;
+  }
+  .menu-item {
+    width: 100%;
+  }
+  .burger {
+    display: block;
+  }
+}
+
+/*
+*
+* RESPONSIVE BEGIN
 *
 */

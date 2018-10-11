@@ -9,20 +9,13 @@
 	.container{
 		justify-content: space-around;
 		.text-box{
-			max-width: 32%;
+			max-width: 37%;
 		}
 		.gallery{
-			max-width: 65%;
-			flex-wrap: wrap;
-			justify-content: space-around;
-			align-items: center;
+			max-width: 60%;
 		}
 	}
 
-}
-
-.picture-box{
-	max-width: 32%;
 }
 
 /*

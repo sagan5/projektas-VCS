@@ -6,8 +6,8 @@
 	<title>AGOT LCG LT</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i|PT+Sans:400,400i,700,700i|Pacifico&amp;subset=latin-ext" rel="stylesheet">
  	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
- 	<link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
- 	<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+ 	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
  	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
@@ -35,13 +35,16 @@
 	<section class="navigation">
 		<div class="container flex-container">
 			<nav class="main-nav">
-				<ul class="flex-container">
-					<li><a href="#top">Home</a></li>
-					<li><a href="#about-game">Game</a></li>
-					<li><a href="#about-us">About us</a></li>
-					<li><a href="#how-to-play">Rules</a></li>
-					<li><a href="#events">Events</a></li>
-					<li><a href="#get-in-touch">Contact</a></li>
+				<div class="burger">
+				<i class="fas fa-bars"></i>
+				</div>
+				<ul class="nav">
+					<li class="menu-item"><a href="#top">Home</a></li>
+					<li class="menu-item"><a href="#about-game">Game</a></li>
+					<li class="menu-item"><a href="#about-us">About us</a></li>
+					<li class="menu-item"><a href="#how-to-play">Rules</a></li>
+					<li class="menu-item"><a href="#events">Events</a></li>
+					<li class="menu-item"><a href="#get-in-touch">Contact</a></li>
 				</ul>
 			</nav>
 			<div class="search-box">
@@ -58,15 +61,10 @@
 	<!-- banner begin -->
 
 	<section class="banner">
-		<div class="carousel">
-	  		<div><img src="assets/images/slider/daenerys.jpg"></div>
-	  		<div><img src="assets/images/slider/jon.jpg"></div>
-	  		<div><img src="assets/images/slider/storm.jpg"></div>
-		</div>
 		<div class="container flex-container">
-			<i class="fas fa-angle-left"></i>
-			<h1>A Game of Thrones LCG Lithuania</h1>
-			<i class="fas fa-angle-right"></i>
+			<div class="banner-text">
+				<h1>A Game of Thrones LCG Lithuania</h1>
+			</div>				
 		</div>
 	</section>
 
@@ -119,25 +117,19 @@
 				<h2 id="about-us">About us</h2>
 				<p>We are a small group of friendly people who like to gather and play A Game of Thrones: The Card Game Second Edition. If you are interested in this game, want to learn to play it or compete against other people - You are most welcome here. You can join us on regular Agot tournaments which are held in board game club "Rikis". Or you can get in touch by contacting us on Facebook or filling out the form bellow and we will contact you as soon as possible. Any kind of level players are welcome to join. If you think that you're complete "noob" don't be afraid, we are eager to teach you or if you can think that you will beat us - you can try your luck!</p>
 			</div>
-			<div class="gallery flex-container">
-				<div class="picture-box">
-					<img src="assets/images/rikis_small/rikis_photo_01.jpg" alt="AGOT tournament moment">
-				</div>	
-				<div class="picture-box">
-					<img src="assets/images/rikis_small/rikis_photo_02.jpg" alt="AGOT tournament moment">
-				</div>	
-				<div class="picture-box">
-					<img src="assets/images/rikis_small/rikis_photo_03.jpg" alt="AGOT tournament moment">
-				</div>	
-				<div class="picture-box">
-					<img src="assets/images/rikis_small/rikis_photo_04.jpg" alt="AGOT tournament moment">
-				</div>
-				<div class="picture-box">
-					<img src="assets/images/rikis_small/rikis_photo_05.jpg" alt="AGOT tournament moment">
-				</div>
-				<div class="picture-box">
-					<img src="assets/images/rikis_small/rikis_photo_06.jpg" alt="AGOT tournament moment">
-				</div>
+			<div class="owl-carousel gallery">
+				<img src="assets/images/rikis/rikis_photo_01.jpg" alt="AGOT tournament moment">
+				<img src="assets/images/rikis/rikis_photo_02.jpg" alt="AGOT tournament moment">	
+				<img src="assets/images/rikis/rikis_photo_03.jpg" alt="AGOT tournament moment">	
+				<img src="assets/images/rikis/rikis_photo_04.jpg" alt="AGOT tournament moment">
+				<img src="assets/images/rikis/rikis_photo_05.jpg" alt="AGOT tournament moment">
+				<img src="assets/images/rikis/rikis_photo_06.jpg" alt="AGOT tournament moment">
+				<img src="assets/images/rikis/rikis_photo_07.jpg" alt="AGOT tournament moment">
+				<img src="assets/images/rikis/rikis_photo_08.jpg" alt="AGOT tournament moment">
+				<img src="assets/images/rikis/rikis_photo_09.jpg" alt="AGOT tournament moment">
+				<img src="assets/images/rikis/rikis_photo_10.jpg" alt="AGOT tournament moment">
+				<img src="assets/images/rikis/rikis_photo_11.jpg" alt="AGOT tournament moment">
+				<img src="assets/images/rikis/rikis_photo_12.jpg" alt="AGOT tournament moment">
 			</div>
 		</div>		
 	</section>
@@ -263,9 +255,11 @@
 	<!-- get in touch end -->
 
 	<!-- scripts begin-->
-	<script type="text/javascript" src="assets/scripts/jquery-1.12.4.min.js"></script>
-	<script type="text/javascript" src="assets/slick/slick.min.js"></script>
-<!-- 	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script> 	
- --> 	<script type="text/javascript" src="assets/scripts/custom.js"></script>
+	<script type="text/javascript" src="assets/scripts/jquery-3.3.1.js"></script>
+	<script src="assets/scripts/owl.carousel.min.js"></script>
+
+<!--  	<script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script> NOT WORKING	-->
+
+ 	<script type="text/javascript" src="assets/scripts/custom.js"></script>
 	<!-- scripts end -->
 </body>

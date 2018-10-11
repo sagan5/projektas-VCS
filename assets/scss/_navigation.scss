@@ -9,7 +9,7 @@
 	border-bottom: 6px solid $lgrey;
 	position: sticky;
 	top: 0;
-	z-index: 1;
+	z-index: 3;
 	.container{
 		justify-content: space-between;
 		padding: 0;
@@ -65,6 +65,24 @@ h2::before {
   margin-top: -100px; 
   height: 100px; 
 }
+
+.nav{
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+// .menu-item{
+// 	background-color: white;
+// 	margin: 0 5px;
+// 	padding: 10px 20px;
+// }
+
+.burger{
+	display: none;
+}
+
 
 /*
 *
