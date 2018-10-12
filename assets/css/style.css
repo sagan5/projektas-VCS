@@ -663,6 +663,12 @@ input[type=submit]:hover {
     margin-left: 20px;
     padding: 5px 15px;
   }
+  h2::before {
+    display: block;
+    content: " ";
+    margin-top: -100px;
+    height: 100px;
+  }
 }
 
 /*

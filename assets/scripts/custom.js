@@ -6,6 +6,9 @@ $(document).ready(function(){
 				$('.burger').click(function(){
 					$('.nav').toggleClass('show');
 				});
+				$('.menu-item').click(function(){
+					$('.nav').toggleClass('show');
+				});
 			});
 
 // galery carousel
