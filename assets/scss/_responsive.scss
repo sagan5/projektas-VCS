@@ -21,6 +21,21 @@
 	.burger{
 		display: block;
 	}
+	.main-nav{
+		a{
+		border-left: 3px solid $white;
+			&:hover{
+				color: $lightblue1;
+				border-bottom: none;
+				border-left: 3px solid $lightblue1;
+				padding-bottom: 0;
+			}
+		}
+		li{
+			margin-left: 20px;
+			padding: 5px 15px;
+		}
+	}
 }
 
 /*

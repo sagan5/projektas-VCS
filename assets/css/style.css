@@ -333,6 +333,18 @@ h2::before {
   display: none;
 }
 
+.fa-bars {
+  font-size: 1.5rem;
+  color: #818181;
+  padding-left: 10px;
+  cursor: pointer;
+  display: inline;
+}
+
+.fa-bars:hover {
+  color: #00bac6;
+}
+
 /*
 *
 * NAVIGATION END
@@ -637,6 +649,19 @@ input[type=submit]:hover {
   }
   .burger {
     display: block;
+  }
+  .main-nav a {
+    border-left: 3px solid #ffffff;
+  }
+  .main-nav a:hover {
+    color: #00bac6;
+    border-bottom: none;
+    border-left: 3px solid #00bac6;
+    padding-bottom: 0;
+  }
+  .main-nav li {
+    margin-left: 20px;
+    padding: 5px 15px;
   }
 }
 
