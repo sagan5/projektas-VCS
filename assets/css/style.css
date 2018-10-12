@@ -109,7 +109,7 @@ p {
   font-weight: 400;
   line-height: 1.2857;
   color: #818181;
-  padding: 0;
+  padding: 0 5px;
 }
 
 .container {
@@ -635,6 +635,28 @@ input[type=submit]:hover {
 * RESPONSIVE BEGIN
 *
 */
+@media all and (max-width: 920px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  h2::before {
+    display: block;
+    content: " ";
+    margin-top: -100px;
+    height: 100px;
+  }
+  .link-box {
+    width: 28%;
+    padding-top: 20px;
+  }
+  .event-box {
+    width: 80%;
+  }
+}
+
 @media all and (max-width: 820px) {
   .nav {
     display: none;
@@ -663,11 +685,70 @@ input[type=submit]:hover {
     margin-left: 20px;
     padding: 5px 15px;
   }
-  h2::before {
-    display: block;
-    content: " ";
-    margin-top: -100px;
-    height: 100px;
+  .about-us .container {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .about-us .container .text-box,
+  .about-us .container .gallery {
+    max-width: 70%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  .advantages {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .advantages-box {
+    width: 100%;
+  }
+  .advantages-box:nth-child(3n+2) {
+    margin-top: 42px;
+  }
+  .about-us .container .text-box,
+  .about-us .container .gallery {
+    max-width: 100%;
+  }
+  .link-box {
+    width: 70%;
+  }
+  .link-box img {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .question-box {
+    width: 100%;
+  }
+  .event-box .event-description {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 250px;
+  }
+  .event-box .event-description .details {
+    width: 100%;
+    text-align: left;
+  }
+  .event-box .event-description #map {
+    width: 100%;
   }
 }
 
