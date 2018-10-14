@@ -1,4 +1,4 @@
-// console.log("Pavyko!");
+console.log("Pavyko!");
 
 // burger menu
 
@@ -21,10 +21,13 @@ $('.owl-carousel').owlCarousel({
 	items:1
 })
 
-// Google maps NOT WORKING???
-// function myMap(){
-// var rikis = {lat: 54.6746045, lng: 25.2804137};
-// var map = new google.maps.Map(document.getElementById('map'), {zoom: 14, center: rikis});
-// var marker = new google.maps.Marker({position: rikis, map: map});
-// }
-
+function myMap() {
+    var mapCanvas = document.getElementById("map");
+    var rikis = {lat: 54.6746045, lng: 25.2804137};
+    var mapOptions = {
+        center: new google.maps.LatLng(rikis),
+        zoom: 14
+    };
+    var map = new google.maps.Map(mapCanvas, mapOptions);
+    var marker = new google.maps.Marker({position: rikis, map: map});
+}
