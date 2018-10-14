@@ -68,15 +68,14 @@ h1 {
 }
 
 h2 {
-  margin: 0;
+  margin: 0 7px 18px;
   font: 2rem "Game of Thrones", sans-serif;
-  font-weight: 500;
   line-height: 1.4;
   word-spacing: 3px;
   color: #818181;
   text-transform: uppercase;
-  margin-bottom: 18px;
   letter-spacing: 1px;
+  text-align: center;
 }
 
 h3 {
@@ -99,12 +98,12 @@ h4 {
 
 h5 {
   font: 0.8rem "Game of Thrones", sans-serif;
-  margin: 10px 0;
+  margin: 10px 7px;
   color: #818181;
 }
 
 p {
-  margin: 0;
+  margin: 0 7px;
   font: 1rem "PT Sans", sans-serif;
   font-weight: 400;
   line-height: 1.2857;
@@ -244,7 +243,7 @@ p {
 }
 
 .main-nav {
-  margin: 37px 7px 24px;
+  margin: 37px 7px 25px;
 }
 
 .main-nav a {
@@ -365,6 +364,7 @@ h2::before {
   -ms-transform: translate(-50%, -20%);
   transform: translate(-50%, -20%);
   padding: 0;
+  width: 100%;
 }
 
 h1 {
@@ -410,10 +410,6 @@ h1 {
 .advantages-box {
   text-align: center;
   width: 32%;
-}
-
-.advantages-box img {
-  border-radius: 10px;
 }
 
 /*
@@ -487,6 +483,10 @@ h1 {
   border-bottom: 1px solid #00bac6;
 }
 
+.link-box p {
+  margin: 0;
+}
+
 /*
 *
 * HOW TO PLAY START
@@ -504,15 +504,11 @@ h1 {
 .event-box {
   margin: 0 auto;
   text-align: center;
-  width: 70%;
+  width: 80%;
 }
 
 .event-box > p {
-  margin: 27px 0;
-}
-
-.event-box img {
-  border-radius: 10px;
+  margin: 27px 7px;
 }
 
 .event-box .event-description {
@@ -552,7 +548,7 @@ h1 {
 .question-box {
   margin: 0 auto;
   text-align: center;
-  width: 60%;
+  width: 80%;
   border-radius: 10px;
 }
 
@@ -624,17 +620,12 @@ input[type=submit]:hover {
 * RESPONSIVE BEGIN
 *
 */
-@media all and (max-width: 750px) {
+@media all and (max-width: 770px) {
   .nav {
     display: none;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
   }
   .nav.show {
     display: block;
-  }
-  .menu-item {
-    width: 100%;
   }
   .burger {
     display: block;
@@ -654,6 +645,23 @@ input[type=submit]:hover {
   .search-box {
     margin-top: 21px;
   }
+  .banner {
+    background-image: url("../images/daenerys-med.jpg");
+    height: 50vh;
+  }
+  .advantages {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .advantages-box {
+    width: 60%;
+  }
+  .advantages-box p {
+    margin-bottom: 15px;
+  }
   .about-us .container {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -661,9 +669,12 @@ input[type=submit]:hover {
     -ms-flex-pack: center;
     justify-content: center;
   }
-  .about-us .container .text-box,
+  .about-us .container .text-box {
+    max-width: 100%;
+    padding-bottom: 10px;
+  }
   .about-us .container .gallery {
-    max-width: 70%;
+    max-width: 80%;
   }
   h1 {
     font-size: 2.5rem;
@@ -675,47 +686,42 @@ input[type=submit]:hover {
     width: 28%;
     padding-top: 20px;
   }
+  h2::before {
+    display: block;
+    content: " ";
+    margin-top: -100px;
+    height: 100px;
+  }
   .event-box {
-    width: 80%;
+    width: 100%;
+  }
+  #map {
+    margin-right: 7px;
+  }
+  .question-box {
+    width: 100%;
   }
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 500px) {
   h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   h2 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
   p {
     font-size: 0.8rem;
   }
-  .advantages {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-  }
-  .advantages-box {
-    width: 100%;
-  }
-  .advantages-box:nth-child(3n+2) {
-    margin-top: 42px;
-  }
-  .about-us .container .text-box,
-  .about-us .container .gallery {
-    max-width: 100%;
-  }
   .link-box {
-    width: 70%;
+    width: 80%;
   }
   .link-box img {
     margin: 0 auto;
-    width: 70%;
+    width: 60%;
   }
-  .question-box {
-    width: 100%;
+  .advantages-box {
+    width: 80%;
   }
   .event-box .event-description {
     -ms-flex-wrap: wrap;
@@ -730,6 +736,7 @@ input[type=submit]:hover {
     text-align: left;
   }
   .event-box .event-description #map {
+    margin: 15px 7px 0;
     width: 100%;
     min-height: 250px;
   }
