@@ -204,16 +204,16 @@ p {
 }
 
 .logo {
-  padding: 7px 15px;
+  padding: 7px;
 }
 
 .soc-nav {
-  padding-right: 8px;
+  padding-right: 7px;
 }
 
 .soc-nav a {
   font-size: 1.375rem;
-  padding: 10px 12px;
+  padding-left: 24px;
   color: #efefef;
 }
 
@@ -229,11 +229,11 @@ p {
 */
 .navigation {
   background-color: #ffffff;
-  border-bottom: 6px solid #efefef;
+  border-bottom: 6px solid #818181;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 3;
+  z-index: 2;
 }
 
 .navigation .container {
@@ -244,15 +244,15 @@ p {
 }
 
 .main-nav {
-  margin-top: 37px;
-  margin-bottom: 24px;
+  margin: 37px 7px 24px;
 }
 
 .main-nav a {
   font: 0.875rem "Game of Thrones", sans-serif;
   text-transform: uppercase;
   color: #818181;
-  padding: 10px 12px 24px;
+  margin-right: 24px;
+  padding-bottom: 24px;
   letter-spacing: 0.8px;
 }
 
@@ -263,60 +263,49 @@ p {
 }
 
 .search-box {
-  margin-top: 28px;
+  margin-top: 33px;
+  padding-right: 7px;
 }
 
 .search-box input[type=text] {
   border: none;
-  padding: 10px;
   margin: 0;
   font-size: 0.875rem;
-  color: #818181;
+  max-width: 120px;
+  padding: 0;
 }
 
 .search-box button {
   background-color: #ffffff;
-  border: 0;
+  border: none;
   font-size: 1.375rem;
   color: #818181;
-  padding-right: 10px;
-  margin-right: 2px;
   cursor: pointer;
+  padding: 0;
 }
 
 .search-box ::-webkit-input-placeholder {
-  color: #818181;
   text-transform: uppercase;
   font: 0.875rem "Game of Thrones", sans-serif;
   letter-spacing: 0.8px;
 }
 
 .search-box :-ms-input-placeholder {
-  color: #818181;
   text-transform: uppercase;
   font: 0.875rem "Game of Thrones", sans-serif;
   letter-spacing: 0.8px;
 }
 
 .search-box ::-ms-input-placeholder {
-  color: #818181;
   text-transform: uppercase;
   font: 0.875rem "Game of Thrones", sans-serif;
   letter-spacing: 0.8px;
 }
 
 .search-box ::placeholder {
-  color: #818181;
   text-transform: uppercase;
   font: 0.875rem "Game of Thrones", sans-serif;
   letter-spacing: 0.8px;
-}
-
-h2::before {
-  display: block;
-  content: " ";
-  margin-top: -100px;
-  height: 100px;
 }
 
 .nav {
@@ -335,13 +324,19 @@ h2::before {
 .fa-bars {
   font-size: 1.5rem;
   color: #818181;
-  padding-left: 10px;
   cursor: pointer;
   display: inline;
 }
 
 .fa-bars:hover {
   color: #00bac6;
+}
+
+h2::before {
+  display: block;
+  content: " ";
+  margin-top: -130px;
+  height: 130px;
 }
 
 /*
@@ -415,10 +410,6 @@ h1 {
 .advantages-box {
   text-align: center;
   width: 32%;
-}
-
-.advantages-box:nth-child(3n+2) {
-  margin-top: 42px;
 }
 
 .advantages-box img {
@@ -633,29 +624,7 @@ input[type=submit]:hover {
 * RESPONSIVE BEGIN
 *
 */
-@media all and (max-width: 920px) {
-  h1 {
-    font-size: 2.5rem;
-  }
-  h2 {
-    font-size: 1.7rem;
-  }
-  h2::before {
-    display: block;
-    content: " ";
-    margin-top: -100px;
-    height: 100px;
-  }
-  .link-box {
-    width: 28%;
-    padding-top: 20px;
-  }
-  .event-box {
-    width: 80%;
-  }
-}
-
-@media all and (max-width: 820px) {
+@media all and (max-width: 750px) {
   .nav {
     display: none;
     -ms-flex-wrap: wrap;
@@ -670,18 +639,20 @@ input[type=submit]:hover {
   .burger {
     display: block;
   }
-  .main-nav a {
-    border-left: 3px solid #ffffff;
+  .main-nav {
+    margin: 18px 7px 12px;
   }
-  .main-nav a:hover {
-    color: #00bac6;
-    border-bottom: none;
-    border-left: 3px solid #00bac6;
-    padding-bottom: 0;
+  .main-nav ul {
+    padding-top: 5px;
   }
   .main-nav li {
-    margin-left: 20px;
-    padding: 5px 15px;
+    padding: 5px 0;
+  }
+  .main-nav a:hover {
+    padding-bottom: 2px;
+  }
+  .search-box {
+    margin-top: 21px;
   }
   .about-us .container {
     -ms-flex-wrap: wrap;
@@ -693,6 +664,19 @@ input[type=submit]:hover {
   .about-us .container .text-box,
   .about-us .container .gallery {
     max-width: 70%;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.7rem;
+  }
+  .link-box {
+    width: 28%;
+    padding-top: 20px;
+  }
+  .event-box {
+    width: 80%;
   }
 }
 
