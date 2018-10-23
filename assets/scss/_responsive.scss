@@ -31,10 +31,6 @@
 	.search-box{
 		margin-top: 21px;
 	}
-	.banner{
-	background-image: url("../images/daenerys-med.jpg");
-	height: 50vh;
-	}
 	.advantages{
 		justify-content: center;
 		flex-wrap: wrap;
@@ -59,7 +55,7 @@
 		}
 	}
 	h1{
-		font-size: 2.5rem;
+		font-size: 2.3rem;
 	}
 	
 	h2{
@@ -88,13 +84,19 @@
 
 @media all and (max-width: 500px){
 	h1{
-		font-size: 1.8rem;
+		font-size: 1.4rem;
 	}
 	h2{
-		font-size: 1.4rem;
+		font-size: 1.1rem;
 	}
 	p{
 		font-size: 0.875rem;
+	}
+	.banner{
+		.container{
+			top: 0%;
+			transform: translate(-50%, 10%);
+		}
 	}
 	.link-box {
 	  	width: 80%;

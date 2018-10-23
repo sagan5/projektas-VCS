@@ -336,7 +336,6 @@ h2::before {
 *
 */
 .banner {
-  height: calc(100vh - 59px - 81px);
   position: relative;
 }
 
@@ -349,12 +348,9 @@ h2::before {
   transform: translate(-50%, -20%);
   padding: 0;
   width: 100%;
-}
-
-.banner img {
-  height: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 h1 {
@@ -367,6 +363,22 @@ h1 {
   text-transform: uppercase;
   margin-bottom: 20px;
   font-weight: 400;
+}
+
+.slick-track {
+  width: 100%;
+  height: 80%;
+}
+
+.slick-item img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+  font-size: 5rem;
+  color: #efefef;
 }
 
 /*
@@ -662,10 +674,6 @@ input[type=submit]:hover {
   .search-box {
     margin-top: 21px;
   }
-  .banner {
-    background-image: url("../images/daenerys-med.jpg");
-    height: 50vh;
-  }
   .advantages {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -694,7 +702,7 @@ input[type=submit]:hover {
     max-width: 80%;
   }
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   h2 {
     font-size: 1.7rem;
@@ -722,13 +730,19 @@ input[type=submit]:hover {
 
 @media all and (max-width: 500px) {
   h1 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
   h2 {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
   p {
     font-size: 0.875rem;
+  }
+  .banner .container {
+    top: 0%;
+    -webkit-transform: translate(-50%, 10%);
+    -ms-transform: translate(-50%, 10%);
+    transform: translate(-50%, 10%);
   }
   .link-box {
     width: 80%;
