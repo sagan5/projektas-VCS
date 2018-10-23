@@ -336,9 +336,6 @@ h2::before {
 *
 */
 .banner {
-  background-image: url("../images/daenerys.jpg");
-  background-size: cover;
-  background-position: center;
   height: calc(100vh - 59px - 81px);
   position: relative;
 }
@@ -352,6 +349,12 @@ h2::before {
   transform: translate(-50%, -20%);
   padding: 0;
   width: 100%;
+}
+
+.banner img {
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 h1 {

@@ -5,9 +5,9 @@
 */
 
 .banner{
-	background-image: url("../images/daenerys.jpg");
-	background-size: cover;
-	background-position: center;
+	// background-image: url("../images/daenerys.jpg");
+	// background-size: cover;
+	// background-position: center;
 	height: calc(100vh - 59px - 81px);
 	position: relative;
 	.container{
@@ -17,6 +17,10 @@
 		transform: translate(-50%, -20%);
 		padding: 0;
 		width: 100%;
+	}
+	img{
+		height: 100%;
+		object-fit: cover;
 	}
 }
 
