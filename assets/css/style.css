@@ -343,18 +343,23 @@ h2::before {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -20%);
-  -ms-transform: translate(-50%, -20%);
-  transform: translate(-50%, -20%);
+  -webkit-transform: translate(-50%, -30%);
+  -ms-transform: translate(-50%, -30%);
+  transform: translate(-50%, -30%);
   padding: 0;
   width: 100%;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.banner .container .title {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
 }
 
 h1 {
-  font: 3.4rem "Game of Thrones", sans-serif;
+  font: 3.1rem "Game of Thrones", sans-serif;
   color: #ffffff;
   line-height: 1.3;
   word-spacing: 10px;
@@ -365,20 +370,20 @@ h1 {
   font-weight: 400;
 }
 
-.slick-track {
-  width: 100%;
-  height: 80%;
-}
-
-.slick-item img {
-  -o-object-fit: cover;
-  object-fit: cover;
-}
-
 .fa-angle-left,
 .fa-angle-right {
   font-size: 5rem;
   color: #efefef;
+  padding: 20px 10px;
+}
+
+.fa-angle-left:hover,
+.fa-angle-right:hover {
+  color: #ffffff;
+}
+
+.slick-dots {
+  bottom: 5px;
 }
 
 /*
@@ -674,6 +679,15 @@ input[type=submit]:hover {
   .search-box {
     margin-top: 21px;
   }
+  .banner .container {
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .fa-angle-left,
+  .fa-angle-right {
+    font-size: 3.5rem;
+  }
   .advantages {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -702,7 +716,7 @@ input[type=submit]:hover {
     max-width: 80%;
   }
   h1 {
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
   h2 {
     font-size: 1.7rem;
@@ -743,6 +757,10 @@ input[type=submit]:hover {
     -webkit-transform: translate(-50%, 10%);
     -ms-transform: translate(-50%, 10%);
     transform: translate(-50%, 10%);
+  }
+  .fa-angle-left,
+  .fa-angle-right {
+    font-size: 2rem;
   }
   .link-box {
     width: 80%;
