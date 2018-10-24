@@ -14,6 +14,7 @@ $(document).ready(function(){
     $('.slick-carousel').slick({
         arrows:  false,
         autoplay: true,
+        pauseOnHover: false,
         arrows: true,
         prevArrow: $('.prev-slide'),
         nextArrow: $('.next-slide'),

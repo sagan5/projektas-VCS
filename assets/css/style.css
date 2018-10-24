@@ -353,9 +353,14 @@ h2::before {
 }
 
 .banner .container .title {
+  width: 100%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin: 0 auto;
 }
 
 h1 {
