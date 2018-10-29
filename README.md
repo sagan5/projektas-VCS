@@ -1,3 +1,3 @@
-# VCS projektas
+# Vilnius Coding School project with HTML, CSS, JavaScript
 
-AGOT LCG 2nd ed Lithuania group page
+Creating my first webpage using knowledge of HTML, CSS and JS from PSD file.
